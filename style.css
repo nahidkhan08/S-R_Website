@@ -1,0 +1,81 @@
+/* Main Stylesheet for S&R Engineering and Renovation Website
+    Description: Contains base styles, custom classes, and animations.
+    Last Updated: September 10, 2025
+*/
+
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* slate-50 */
+}
+
+.smooth-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Navigation Styles --- */
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #d1d5db; /* gray-300 */
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff; /* white */
+}
+
+/* Underline animation for nav links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6366f1; /* indigo-500 */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Active navigation link style */
+.nav-active {
+    color: #ffffff !important; /* white */
+    font-weight: 600;
+}
+
+.nav-active::after {
+    transform: scaleX(1) !important;
+    transform-origin: bottom left !important;
+}
+
+
+/* Mobile navigation active link */
+.nav-link-mobile.nav-active {
+    background-color: #4338ca; /* indigo-700 */
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* --- FAQ Accordion Styles --- */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease-out;
+}
+
