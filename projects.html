@@ -13,100 +13,114 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-gray-800">
+<body class="bg-slate-50">
 
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <!-- Page Header -->
-        <div class="bg-white">
-            <div class="container mx-auto px-6 py-16 text-center">
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900">Our Projects</h1>
-                <p class="text-lg text-gray-600 mt-4">A showcase of our quality workmanship and completed projects</p>
+        <!-- Page Header with Background Image -->
+        <div class="relative bg-cover bg-center h-80" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1920&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-slate-900/60"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+                <h1 class="text-4xl lg:text-5xl font-extrabold">Our Projects</h1>
+                <p class="text-lg mt-4 max-w-2xl mx-auto">A showcase of our quality workmanship and completed projects.</p>
             </div>
         </div>
 
         <!-- Projects Grid Section -->
         <section id="projects-gallery" class="py-20">
             <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     
                     <!-- Project Case Study 1 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                        <div class="overflow-hidden">
-                           <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Renovated+Kitchen" alt="Modern Kitchen Renovation" class="w-full h-56 object-cover smooth-transition group-hover:scale-105">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group smooth-transition hover:shadow-2xl hover:-translate-y-2">
+                        <div class="overflow-hidden h-60">
+                           <img src="https://images.unsplash.com/photo-1556912173-3e7ed36ea0d6?q=80&w=600&auto=format&fit=crop" alt="Modern Kitchen Renovation" class="w-full h-full object-cover smooth-transition group-hover:scale-105">
                         </div>
                         <div class="p-6">
                             <p class="text-sm text-indigo-500 font-semibold mb-1">Residential Renovation</p>
                             <h3 class="text-xl font-bold mb-2">Modern Kitchen Renovation</h3>
-                            <p class="text-gray-600 text-sm">Complete overhaul with new cabinets, quartz countertops, modern tiling, and energy-efficient lighting to create a functional and stylish cooking space.</p>
+                            <p class="text-gray-600 text-sm">Complete overhaul with new cabinets, quartz countertops, modern tiling, and energy-efficient lighting.</p>
                         </div>
                     </div>
                     
                     <!-- Project Case Study 2 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                        <div class="overflow-hidden">
-                           <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Bathroom+Tiling" alt="Bathroom Tiling" class="w-full h-56 object-cover smooth-transition group-hover:scale-105">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group smooth-transition hover:shadow-2xl hover:-translate-y-2">
+                        <div class="overflow-hidden h-60">
+                           <img src="https://images.unsplash.com/photo-1583679092337-53d24249ea94?q=80&w=600&auto=format&fit=crop" alt="Bathroom Tiling" class="w-full h-full object-cover smooth-transition group-hover:scale-105">
                         </div>
                         <div class="p-6">
                             <p class="text-sm text-indigo-500 font-semibold mb-1">Tiling & Flooring</p>
                             <h3 class="text-xl font-bold mb-2">Luxury Bathroom Tiling</h3>
-                            <p class="text-gray-600 text-sm">Installed elegant and durable floor-to-ceiling tiles, creating a waterproof and visually stunning modern bathroom for a condominium unit.</p>
+                            <p class="text-gray-600 text-sm">Installed elegant, durable floor-to-ceiling tiles, creating a waterproof and visually stunning modern bathroom.</p>
                         </div>
                     </div>
 
                     <!-- Project Case Study 3 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                        <div class="overflow-hidden">
-                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Office+Painting" alt="Living Room Painting" class="w-full h-56 object-cover smooth-transition group-hover:scale-105">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group smooth-transition hover:shadow-2xl hover:-translate-y-2">
+                        <div class="overflow-hidden h-60">
+                            <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=600&auto=format&fit=crop" alt="Office Painting" class="w-full h-full object-cover smooth-transition group-hover:scale-105">
                         </div>
                         <div class="p-6">
                              <p class="text-sm text-indigo-500 font-semibold mb-1">Commercial Painting</p>
                             <h3 class="text-xl font-bold mb-2">Corporate Office Painting</h3>
-                            <p class="text-gray-600 text-sm">Professional painting service for a multi-floor office space that transformed the work environment with a fresh, clean, and modern color palette.</p>
+                            <p class="text-gray-600 text-sm">Professional painting service for a multi-floor office space that transformed the work environment.</p>
                         </div>
                     </div>
 
                     <!-- Project Case Study 4 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                       <div class="overflow-hidden">
-                           <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Aircon+Installation" alt="Aircon Installation" class="w-full h-56 object-cover smooth-transition group-hover:scale-105">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group smooth-transition hover:shadow-2xl hover:-translate-y-2">
+                       <div class="overflow-hidden h-60">
+                           <img src="https://images.unsplash.com/photo-1620027582539-a764552a81b3?q=80&w=600&auto=format&fit=crop" alt="Aircon Installation" class="w-full h-full object-cover smooth-transition group-hover:scale-105">
                        </div>
                         <div class="p-6">
                             <p class="text-sm text-indigo-500 font-semibold mb-1">Mechanical & Electrical</p>
                             <h3 class="text-xl font-bold">Multi-Unit Aircon Installation</h3>
-                            <p class="text-gray-600 text-sm">Neat and efficient installation of new, energy-saving air conditioning systems for a 4-room HDB flat, ensuring optimal cooling.</p>
+                            <p class="text-gray-600 text-sm">Neat and efficient installation of new, energy-saving air conditioning systems for a 4-room HDB flat.</p>
                         </div>
                     </div>
 
                     <!-- Project Case Study 5 -->
-                     <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                        <div class="overflow-hidden">
-                           <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Electrical+Work" alt="Electrical Work" class="w-full h-56 object-cover smooth-transition group-hover:scale-105">
+                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden group smooth-transition hover:shadow-2xl hover:-translate-y-2">
+                        <div class="overflow-hidden h-60">
+                           <img src="https://images.unsplash.com/photo-1513161455079-a41311b21264?q=80&w=600&auto=format&fit=crop" alt="Electrical Work" class="w-full h-full object-cover smooth-transition group-hover:scale-105">
                         </div>
                         <div class="p-6">
                             <p class="text-sm text-indigo-500 font-semibold mb-1">Mechanical & Electrical</p>
-                            <h3 class="text-xl font-bold mb-2">Electrical Wiring & Lighting</h3>
+                            <h3 class="text-xl font-bold mb-2">Custom Lighting & Wiring</h3>
                             <p class="text-gray-600 text-sm">Full-house rewiring and custom light fixture installation for a landed property, compliant with all safety standards.</p>
                         </div>
                     </div>
 
                     <!-- Project Case Study 6 -->
-                     <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                        <div class="overflow-hidden">
-                           <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Office+Reinstatement" alt="Office Reinstatement" class="w-full h-56 object-cover smooth-transition group-hover:scale-105">
+                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden group smooth-transition hover:shadow-2xl hover:-translate-y-2">
+                        <div class="overflow-hidden h-60">
+                           <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=600&auto=format&fit=crop" alt="Office Reinstatement" class="w-full h-full object-cover smooth-transition group-hover:scale-105">
                         </div>
                         <div class="p-6">
                             <p class="text-sm text-indigo-500 font-semibold mb-1">Reinstatement Works</p>
                             <h3 class="text-xl font-bold mb-2">Commercial Reinstatement</h3>
-                            <p class="text-gray-600 text-sm">Successfully restored a 2000 sq. ft. commercial office space to its original condition, meeting all landlord and building requirements.</p>
+                            <p class="text-gray-600 text-sm">Successfully restored a 2000 sq. ft. commercial office space to its original condition, meeting all landlord requirements.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
+
+        <!-- Call to Action Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                 <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Have a Project in Mind?</h2>
+                    <p class="text-lg text-gray-600 mb-8">Let's discuss how we can bring your vision to life. Contact us today for a free consultation.</p>
+                    <a href="contact.html" class="bg-indigo-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-indigo-700 smooth-transition shadow-lg transform hover:scale-105 inline-block">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer Placeholder -->

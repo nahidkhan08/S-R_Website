@@ -13,75 +13,90 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-gray-800">
+<body class="bg-slate-50">
 
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <!-- Page Header -->
-        <div class="bg-white">
-            <div class="container mx-auto px-6 py-16 text-center">
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900">Our Comprehensive Services</h1>
-                <p class="text-lg text-gray-600 mt-4">High-quality solutions for all your property needs</p>
+        <!-- Page Header with Background Image -->
+        <div class="relative bg-cover bg-center h-80" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1920&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-slate-900/60"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+                <h1 class="text-4xl lg:text-5xl font-extrabold">Our Services</h1>
+                <p class="text-lg mt-4 max-w-2xl mx-auto">Delivering comprehensive solutions with quality and precision.</p>
             </div>
         </div>
 
         <!-- Services Grid Section -->
-        <section id="services" class="py-20">
+        <section id="services-grid" class="py-20">
             <div class="container mx-auto px-6">
                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Service: Plumbing -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-faucet-drip"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Plumbing</h4>
-                        <p class="text-gray-600 text-sm">Leak repairs, pipe installation, drain cleaning, and all general plumbing solutions.</p>
+                    <!-- Service Card 1: Plumbing -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-cyan-500 to-blue-600">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-faucet-drip"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Plumbing</h4>
+                        <p class="opacity-90 text-sm">Leak repairs, pipe installation, drain cleaning, and all general plumbing solutions.</p>
                     </div>
-                    <!-- Service: Electric -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-bolt"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Electric</h4>
-                        <p class="text-gray-600 text-sm">Wiring, lighting, power point installation, and electrical safety checks.</p>
+                    <!-- Service Card 2: Electric -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-yellow-400 to-orange-500">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-bolt"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Electric</h4>
+                        <p class="opacity-90 text-sm">Wiring, lighting, power point installation, and certified electrical safety checks.</p>
                     </div>
-                    <!-- Service: Aircon -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-wind"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Aircon</h4>
-                        <p class="text-gray-600 text-sm">Installation, maintenance, repair, and regular chemical servicing.</p>
+                    <!-- Service Card 3: Aircon -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-sky-400 to-cyan-400">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-wind"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Aircon</h4>
+                        <p class="opacity-90 text-sm">Installation, maintenance, repair, and regular chemical servicing for all brands.</p>
                     </div>
-                    <!-- Service: Painting -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-paint-roller"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Painting</h4>
-                        <p class="text-gray-600 text-sm">Professional interior and exterior painting services for a fresh, new look.</p>
+                    <!-- Service Card 4: Painting -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-pink-500 to-rose-500">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-paint-roller"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Painting</h4>
+                        <p class="opacity-90 text-sm">Professional interior and exterior painting services for a fresh, new look.</p>
                     </div>
-                    <!-- Service: Tiling -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-grip"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Tiling</h4>
-                        <p class="text-gray-600 text-sm">Floor and wall tiling for kitchens, bathrooms, living rooms and more.</p>
+                    <!-- Service Card 5: Tiling -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-slate-600 to-gray-700">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-grip"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Tiling</h4>
+                        <p class="opacity-90 text-sm">Floor and wall tiling for kitchens, bathrooms, living rooms and commercial spaces.</p>
                     </div>
-                    <!-- Service: Renovation -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-house-chimney-window"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Renovation</h4>
-                        <p class="text-gray-600 text-sm">Complete home or office renovation, remodeling, and interior design.</p>
+                    <!-- Service Card 6: Renovation -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-indigo-500 to-purple-600">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-house-chimney-window"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Renovation</h4>
+                        <p class="opacity-90 text-sm">Complete home or office renovation, remodeling, and interior design consultation.</p>
                     </div>
-                    <!-- Service: Demolition -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-hammer"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Demolition</h4>
-                        <p class="text-gray-600 text-sm">Safe and controlled hacking, dismantling and demolition works.</p>
+                    <!-- Service Card 7: Demolition -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-red-500 to-orange-600">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-hammer"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Demolition</h4>
+                        <p class="opacity-90 text-sm">Safe and controlled hacking, dismantling and demolition works for any project size.</p>
                     </div>
-                    <!-- Service: Reinstatement -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-3xl"><i class="fa-solid fa-rotate-left"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Reinstatement</h4>
-                        <p class="text-gray-600 text-sm">Restoring residential or commercial premises to their original condition.</p>
+                    <!-- Service Card 8: Reinstatement -->
+                    <div class="group text-center text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl smooth-transition transform hover:-translate-y-2 bg-gradient-to-br from-emerald-500 to-teal-600">
+                        <div class="text-5xl mb-6"><i class="fa-solid fa-rotate-left"></i></div>
+                        <h4 class="text-2xl font-bold mb-3">Reinstatement</h4>
+                        <p class="opacity-90 text-sm">Restoring residential or commercial premises to their original condition efficiently.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Call to Action Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                 <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Start Your Project?</h2>
+                    <p class="text-lg text-gray-600 mb-8">Let's discuss how we can bring your vision to life. Contact us today for a free consultation and quote.</p>
+                    <a href="contact.html" class="bg-indigo-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-indigo-700 smooth-transition shadow-lg transform hover:scale-105 inline-block">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer Placeholder -->

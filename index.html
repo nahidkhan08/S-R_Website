@@ -13,23 +13,22 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-gray-800">
+<body class="bg-slate-50">
 
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="relative bg-white">
-            <!-- Subtle Background Image -->
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://placehold.co/1920x1080/e0e7ff/3730a3?text=Professional+Workspace'); opacity: 0.1;"></div>
-            <div class="container mx-auto px-6 py-24 md:py-32 text-center relative z-10">
+        <section id="home" class="relative bg-cover bg-center h-[600px] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1920&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
                 <div class="max-w-4xl mx-auto">
-                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-                        Your Trusted Partner for Engineering & Renovation in Singapore
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                        Building Dreams, Creating Reality in Singapore
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-600 mb-10">
-                        From plumbing and electrical work to complete home renovation, we provide reliable and high-quality services to meet your needs.
+                    <p class="text-lg md:text-xl text-slate-200 mb-10">
+                        From minor repairs to major renovations, we deliver excellence and precision in every project.
                     </p>
                     <a href="contact.html" class="bg-indigo-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-indigo-700 smooth-transition shadow-lg transform hover:scale-105 inline-block">
                         Get a Free Quote
@@ -37,73 +36,132 @@
                 </div>
             </div>
         </section>
-
-        <!-- Abridged Services Section -->
-        <section class="py-20">
-             <div class="container mx-auto px-6">
+        
+        <!-- Why Choose Us Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">What We Do</h2>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Our Core Services</h3>
+                    <h2 class="text-sm font-bold uppercase text-indigo-600 mb-2">Our Promise</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose S&R Engineering and Renovation?</h3>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Service Card 1 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-4xl"><i class="fa-solid fa-house-chimney-window"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Full Renovation</h4>
-                        <p class="text-gray-600 text-sm">Complete home and office remodeling solutions.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                    <!-- Feature 1 -->
+                    <div class="bg-gradient-to-br from-slate-700 to-slate-900 text-white p-8 rounded-2xl shadow-xl transform hover:-translate-y-2 smooth-transition">
+                        <div class="text-4xl mb-6 text-indigo-300"><i class="fa-solid fa-award"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Quality Guarantee</h4>
+                        <p class="text-slate-300">We use only the highest quality materials and certified professionals to ensure lasting results.</p>
                     </div>
-                    <!-- Service Card 2 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-4xl"><i class="fa-solid fa-faucet-drip"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Plumbing Works</h4>
-                        <p class="text-gray-600 text-sm">Expert solutions for leaks, installations, and repairs.</p>
+                    <!-- Feature 2 -->
+                    <div class="bg-gradient-to-br from-blue-700 to-indigo-900 text-white p-8 rounded-2xl shadow-xl transform hover:-translate-y-2 smooth-transition">
+                        <div class="text-4xl mb-6 text-indigo-300"><i class="fa-solid fa-users-gear"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Experienced Team</h4>
+                        <p class="text-slate-300">Our team has years of industry experience, bringing expertise and precision to every job.</p>
                     </div>
-                    <!-- Service Card 3 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-4xl"><i class="fa-solid fa-bolt"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Electrical Services</h4>
-                        <p class="text-gray-600 text-sm">Safe wiring, lighting, and power point installations.</p>
+                    <!-- Feature 3 -->
+                    <div class="bg-gradient-to-br from-teal-600 to-cyan-800 text-white p-8 rounded-2xl shadow-xl transform hover:-translate-y-2 smooth-transition">
+                        <div class="text-4xl mb-6 text-indigo-300"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h4 class="text-xl font-bold mb-2">Transparent Pricing</h4>
+                        <p class="text-slate-300">No hidden costs. We provide clear, detailed quotes so you know exactly what to expect.</p>
                     </div>
-                     <!-- Service Card 4 -->
-                     <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl smooth-transition transform hover:-translate-y-2 text-center">
-                        <div class="bg-indigo-100 text-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto text-4xl"><i class="fa-solid fa-paint-roller"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Painting Services</h4>
-                        <p class="text-gray-600 text-sm">Professional interior and exterior painting.</p>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                     <a href="services.html" class="text-indigo-600 font-semibold hover:underline">View All Services &rarr;</a>
                 </div>
             </div>
         </section>
 
+        <!-- Our Core Services Section (Colorful) -->
+        <section class="py-20 bg-indigo-50">
+            <div class="container mx-auto px-6">
+               <div class="text-center mb-16">
+                   <h2 class="text-sm font-bold uppercase text-indigo-600 mb-2">What We Do</h2>
+                   <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Our Core Services</h3>
+               </div>
+               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                   <!-- Service Card 1 -->
+                   <div class="p-8 rounded-2xl shadow-lg text-white bg-gradient-to-br from-blue-500 to-indigo-600 transform hover:-translate-y-2 smooth-transition">
+                       <div class="text-4xl mb-4"><i class="fa-solid fa-house-chimney-window"></i></div>
+                       <h4 class="text-xl font-bold mb-2">Renovation</h4>
+                       <p class="text-blue-100 text-sm">Full-scale home & office remodeling.</p>
+                   </div>
+                   <!-- Service Card 2 -->
+                   <div class="p-8 rounded-2xl shadow-lg text-white bg-gradient-to-br from-purple-500 to-pink-500 transform hover:-translate-y-2 smooth-transition">
+                       <div class="text-4xl mb-4"><i class="fa-solid fa-faucet-drip"></i></div>
+                       <h4 class="text-xl font-bold mb-2">Plumbing</h4>
+                       <p class="text-purple-100 text-sm">Leaks, installations, and repairs.</p>
+                   </div>
+                   <!-- Service Card 3 -->
+                   <div class="p-8 rounded-2xl shadow-lg text-white bg-gradient-to-br from-orange-500 to-red-500 transform hover:-translate-y-2 smooth-transition">
+                       <div class="text-4xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                       <h4 class="text-xl font-bold mb-2">Electrical</h4>
+                       <p class="text-orange-100 text-sm">Wiring, lighting, and safety checks.</p>
+                   </div>
+                    <!-- Service Card 4 -->
+                    <div class="p-8 rounded-2xl shadow-lg text-white bg-gradient-to-br from-green-500 to-teal-500 transform hover:-translate-y-2 smooth-transition">
+                       <div class="text-4xl mb-4"><i class="fa-solid fa-paint-roller"></i></div>
+                       <h4 class="text-xl font-bold mb-2">Painting</h4>
+                       <p class="text-green-100 text-sm">Interior and exterior painting.</p>
+                   </div>
+               </div>
+               <div class="text-center mt-12">
+                    <a href="services.html" class="text-indigo-600 font-semibold hover:underline">View All Services &rarr;</a>
+               </div>
+           </div>
+       </section>
+
+        <!-- Featured Project Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="lg:flex lg:items-center lg:space-x-12">
+                     <div class="lg:w-1/2 mb-10 lg:mb-0">
+                         <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" alt="Skilled plumber working on pipes" class="rounded-2xl shadow-2xl w-full h-auto object-cover">
+                     </div>
+                     <div class="lg:w-1/2">
+                         <h2 class="text-sm font-bold uppercase text-indigo-600 mb-2">Featured Project</h2>
+                         <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Residential Plumbing Solution</h3>
+                         <p class="text-gray-600 mb-6 leading-relaxed">
+                            A complex pipe installation and fixture upgrade for a residential bathroom. This project demonstrates our precision and expertise in handling modern plumbing systems, ensuring a leak-free and efficient setup.
+                         </p>
+                         <div class="mt-8 space-x-4">
+                            <a href="projects.html" class="bg-slate-800 text-white font-semibold px-6 py-3 rounded-full hover:bg-slate-900 smooth-transition shadow-md inline-block">
+                                View More Projects
+                            </a>
+                            <a href="contact.html" class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-indigo-700 smooth-transition shadow-md inline-block">
+                                Request a Quote
+                            </a>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
         <!-- Customer Feedback Section -->
-        <section id="customer-feedback" class="py-20 bg-white">
+        <section id="customer-feedback" class="py-20 bg-indigo-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">Customer Feedback</h2>
+                    <h2 class="text-sm font-bold uppercase text-indigo-600 mb-2">Customer Feedback</h2>
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-900">What Our Clients Say</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Feedback Card 1 -->
-                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg">
-                        <p class="text-gray-600 mb-6 italic">"S&R Engineering handled our office renovation flawlessly. Professional, efficient, and the results exceeded our expectations!"</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                        <i class="fa-solid fa-quote-left text-indigo-100 text-6xl absolute top-6 left-6 -z-0"></i>
+                        <p class="text-gray-600 mb-6 italic relative z-10">"S&R Engineering handled our office renovation flawlessly. Professional, efficient, and the results exceeded our expectations!"</p>
                         <div class="flex items-center">
                             <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://placehold.co/100x100/e2e8f0/4a5568?text=AK" alt="Avatar of Alex Koh">
                             <div><p class="font-bold text-gray-900">Alex Koh</p><p class="text-sm text-gray-500">Business Owner</p></div>
                         </div>
                     </div>
                     <!-- Feedback Card 2 -->
-                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg">
-                        <p class="text-gray-600 mb-6 italic">"We had an urgent plumbing issue, and their team responded very quickly and fixed it professionally. Excellent service!"</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                        <i class="fa-solid fa-quote-left text-indigo-100 text-6xl absolute top-6 left-6 -z-0"></i>
+                        <p class="text-gray-600 mb-6 italic relative z-10">"We had an urgent plumbing issue, and their team responded very quickly and fixed it professionally. Excellent service!"</p>
                         <div class="flex items-center">
                              <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://placehold.co/100x100/e2e8f0/4a5568?text=ST" alt="Avatar of Siti Tan">
                             <div><p class="font-bold text-gray-900">Siti Tan</p><p class="text-sm text-gray-500">Homeowner</p></div>
                         </div>
                     </div>
                     <!-- Feedback Card 3 -->
-                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg">
-                        <p class="text-gray-600 mb-6 italic">"The painting and tiling work for our new apartment was done beautifully. Great attention to detail. We are very happy!"</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                         <i class="fa-solid fa-quote-left text-indigo-100 text-6xl absolute top-6 left-6 -z-0"></i>
+                        <p class="text-gray-600 mb-6 italic relative z-10">"The painting and tiling work for our new apartment was done beautifully. Great attention to detail. We are very happy!"</p>
                         <div class="flex items-center">
                             <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://placehold.co/100x100/e2e8f0/4a5568?text=RC" alt="Avatar of Raj Kumar">
                             <div><p class="font-bold text-gray-900">Raj Kumar</p><p class="text-sm text-gray-500">Resident</p></div>

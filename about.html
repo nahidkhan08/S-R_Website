@@ -13,17 +13,18 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-gray-800">
+<body class="bg-slate-50">
 
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main>
-        <!-- Page Header -->
-        <div class="bg-white">
-            <div class="container mx-auto px-6 py-16 text-center">
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900">About S&R Engineering and Renovation PTE LTD</h1>
-                <p class="text-lg text-gray-600 mt-4">Your reliable partner in building and maintenance</p>
+        <!-- Page Header with Background Image -->
+        <div class="relative bg-cover bg-center h-80" style="background-image: url('https://placehold.co/1920x1080/4a5568/ffffff?text=Building+Excellence');">
+            <div class="absolute inset-0 bg-slate-900/60"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+                <h1 class="text-4xl lg:text-5xl font-extrabold">About S&R Engineering and Renovation PTE LTD</h1>
+                <p class="text-lg mt-4 max-w-2xl mx-auto">Crafting quality spaces with passion and precision across Singapore.</p>
             </div>
         </div>
         
@@ -31,13 +32,10 @@
         <section class="py-20">
             <div class="container mx-auto px-6">
                 <!-- Who We Are Section -->
-                <div class="lg:flex lg:items-center lg:space-x-12 mb-20">
-                    <div class="lg:w-1/2 mb-10 lg:mb-0">
-                        <img src="https://placehold.co/600x400/6366f1/ffffff?text=Our+Team" alt="Our Team" class="rounded-2xl shadow-2xl w-full h-auto object-cover">
-                    </div>
-                    <div class="lg:w-1/2">
-                        <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">Who We Are</h2>
-                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Quality Renovation & Engineering Services</h3>
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                     <div class="lg:w-1/2">
+                        <h2 class="text-sm font-bold uppercase text-indigo-600 mb-2">Who We Are</h2>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Your Trusted Renovation & Engineering Partner</h3>
                         <p class="text-gray-600 mb-4 leading-relaxed">
                             S&R Engineering and Renovation PTE LTD is a premier service provider in Singapore, dedicated to delivering exceptional workmanship and customer satisfaction. Our experienced team of professionals is equipped to handle a wide range of services, ensuring every project is completed to the highest standards.
                         </p>
@@ -45,31 +43,49 @@
                             Our mission is to provide reliable, efficient, and affordable solutions for all your property needs. We believe in building lasting relationships with our clients through transparency, quality work, and professional integrity.
                         </p>
                     </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&auto=format&fit=crop" alt="Our Team discussing plans" class="rounded-2xl shadow-2xl w-full h-auto object-cover">
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Our Values Section -->
+        <!-- Why Choose Us Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">Our Core Principles</h2>
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Our Values</h3>
+                    <h2 class="text-sm font-bold uppercase text-indigo-600 mb-2">Our Commitment</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose Us?</h3>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <!-- Value Card 1: Quality -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
-                        <div class="text-indigo-600 text-4xl mb-4"><i class="fa-solid fa-gem"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Quality Workmanship</h4>
-                        <p class="text-gray-600">We use high-quality materials and skilled professionals to deliver durable and beautiful results on every project.</p>
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=600&auto=format&fit=crop" alt="Detailed quality work" class="rounded-2xl shadow-xl w-full h-auto object-cover">
                     </div>
-                    <!-- Value Card 2: Integrity -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
-                        <div class="text-indigo-600 text-4xl mb-4"><i class="fa-solid fa-handshake"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Integrity & Honesty</h4>
-                        <p class="text-gray-600">We operate with complete transparency, providing honest advice and fair pricing for all our services.</p>
-                    </div>
-                    <!-- Value Card 3: Customer Satisfaction -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
-                        <div class="text-indigo-600 text-4xl mb-4"><i class="fa-solid fa-star"></i></div>
-                        <h4 class="text-xl font-bold mb-2">Customer Satisfaction</h4>
-                        <p class="text-gray-600">Our ultimate goal is your satisfaction. We work closely with you to ensure your vision becomes a reality.</p>
+                    <div class="lg:w-1/2 space-y-8">
+                        <!-- Feature 1 -->
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 text-indigo-600 text-2xl w-16 h-16 rounded-full flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-gem"></i></div>
+                            <div class="ml-6">
+                                <h4 class="text-xl font-bold mb-1">Quality Workmanship</h4>
+                                <p class="text-gray-600">We use high-quality materials and skilled professionals to deliver durable and beautiful results.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="flex items-start">
+                             <div class="bg-indigo-100 text-indigo-600 text-2xl w-16 h-16 rounded-full flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-handshake"></i></div>
+                            <div class="ml-6">
+                                <h4 class="text-xl font-bold mb-1">Integrity & Honesty</h4>
+                                <p class="text-gray-600">We operate with complete transparency, providing honest advice and fair pricing for all our services.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="flex items-start">
+                             <div class="bg-indigo-100 text-indigo-600 text-2xl w-16 h-16 rounded-full flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-star"></i></div>
+                            <div class="ml-6">
+                                <h4 class="text-xl font-bold mb-1">Customer Satisfaction</h4>
+                                <p class="text-gray-600">Our ultimate goal is your satisfaction. We work closely with you to ensure your vision becomes a reality.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,7 +97,7 @@
 
     <!-- Main JavaScript File -->
     <script src="main.js"></script>
-
+    
 </body>
 </html>
 
